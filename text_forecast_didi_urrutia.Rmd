@@ -1,0 +1,167 @@
+---
+# Preámbulo con paquetes y definiciones básicas
+# Se incluyen los comandos mínimos de LaTeX
+#title: Boceto para pdf de R Markdown
+author:
+ - Jesús Alberto Urrutia Camacho
+header-includes:
+  - \usepackage{array}
+  - \usepackage{booktabs}
+  - \usepackage{amsmath}
+  - \allowdisplaybreaks #% para permitir rompimiento de ecuaciones en p\'aginas distintas
+    #% ver http://tex.stackexchange.com/questions/51682/is-it-possible-to-pagebreak-aligned-equations
+    #% para m\'as detalles
+  #- \numberwithin{equation}{section} # Para numerar ecuaciones por secciones cuando están numeradas
+  - \usepackage{amssymb}
+  - \usepackage{mathtools}
+  - \usepackage{braket}
+  - \usepackage[shortlabels]{enumitem}
+  - \usepackage[spanish]{babel}
+  - \decimalpoint
+  - \usepackage{graphicx}
+  - \usepackage{caption}
+  - \renewcommand{\and}{\\}
+  - \renewcommand{\arraystretch}{1.2}
+  - \usepackage{booktabs}
+  - \usepackage{float}
+  - \usepackage[font=small,labelfont=bf]{caption}
+  - \usepackage{fancyhdr}
+  - \usepackage{dsfont}
+  # Usa el comando \mathds{1}
+  # Ver
+  # https://tex.stackexchange.com/questions/26637/how-do-you-get-mathbb1-to-work-characteristic-function-of-a-set
+  # para más información acerca de números con estilo mathbb
+  - \newcommand{\mb}[1]{\mathbb{#1}}
+  # para usar kableExtra se requieren los siguientes paquetes
+  # ver
+  # https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf
+  # para más detalles
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+output: 
+  pdf_document:
+    #toc: true
+    toc_depth: 2
+    number_sections: true
+    df_print: kable
+    highlight: tango
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+```
+
+```{r include = FALSE, echo = FALSE}
+##  LIBRERÍAS
+# Aquí vamos a incluir las librerías que necesitemos
+# En donde se pongan pedazos de código, únicamente se comentará
+# Es BUENA PRÁCTICA poner las librerías al principio, por ello las ponemos aquí
+#install.packages()
+# library(library_name)
+library(knitr)
+#install.packages("kableExtra")
+library(kableExtra)
+library(cluster)
+library(mclust)
+library(factoextra)
+library(dendextend)
+library(tinytex)
+
+library(tidyverse)
+library(data.table)
+library(sandwich)
+library(corrplot)
+library(lmtest)
+library(leaps)
+library(olsrr)
+```
+
+
+
+
+<!-- AQUÍ INICIA LA PÁGINA DE TÍTULO
+  Indicaciones:
+          El nombre de los autores aparece al principio, allí puede cambiar su correo
+          SIEMPRE PONER LA FECHA CORRECTA (la de entrega)
+          ESCRIBIR CADA VEZ EL NOMBRE DE LA MATERIA CORRESPONDIENTE
+-->
+
+\title{ {\sc Didi}\\
+\vspace{1cm}{\sc Didi Business Intelligence Challenge}\\ 
+         \vspace{1.5cm} {Job position: Business Inteligence} 
+       }
+  
+\date{\vspace{1.5cm}Ciudad de México\\
+      \vspace{1cm} \today }
+
+ \maketitle
+ 
+
+\thispagestyle{fancy}
+\newpage
+
+<!-- FIN DE LA PÁGINA DE  TÍTULO-->
+
+<!-- INICIO ÍNDICE -->
+
+\tableofcontents
+\newpage
+<!-- FIN INDICE -->
+
+
+<!-- INICIO DOCUMENTO -->
+
+
+# Based on the data and your ideas, plan strategies to double the total restaurant visitors in six months.
+
+I would like to use 2 strategies: 
+
+- Based on the modelling techniques, I strongly use the variables that area statistical significant:  Holiday, the type of  Western food, the Restaurat, and  the day of the week (specially a Saturday)
+
+- Based on the professional expertise, I will hire a specialist in restaurant (because nowadays no one machine or statistical model is better that the human expertis to simulate or predict in long-term situations, specially in complex or chaotic environments, as selling or human interactions). 
+
+- Based on mi experience as a business model designer, designing statistical experiments of advertising promotions, in order to know what strategy and variable allow to have higher sales. Once the variables are known, design a sales model collaboratively with prototypical customers
+
+# - Imagine that these restaurants are in your city (and not in Japan), what other data would you want to join in order of get more insights to increase the visitors?
+
+
+I would like to have information about restaurants and  consumers. In other words, it would be pertinent to define the type of consumer profile and its socio-demographic, cultural variables (such as age, income, education, address, work location, family/friend networks with whom they go to eat, partisan affiliation) in order to to generate the proto person. Regarding the profile of the restaurant and the industry, it would be pertinent to know the economic cycle where it is at the moment, also variables stop consumption (such as location, type of food, proximity to other restaurants, food ranking, day of the week , perception of location insecurity). So, in general, there are two factors (restaurant and customer), and for the set of variables, I would run a System of Structural Equations, in order to validate if the proposed variables have consistency in practice, and later, I would run Statistical experiments, in order to compares which variables have more weight in the prediction.
+Finally, although I proposed some variables to consider to increase visits, it would be necessary to qualitatively validate if the proposed variables are the best.
+
+
+#  How many channels can you think of downloading a DiDi Rides APP and how will you estimate the quality and cost of each channel?
+
+The channels refer to the means by which it is possible to download a tool. In the case of downloading applications, I tried to do a brief documentary research, I found that
+ more than half (57%) of app downloads are from digital channels. The rest is done through other channels, such as prepaid cards.
+
+Given that two channels are proposed, the way in which quality and price are estimated will be as follows:
+
+- The quality of the channels will depend on 2 indicators: The first is Quantity of purchase per user given the channel; and purchase frequency per user given channel.
+
+- Regarding the price of the channels, it is proposed that the Commercial team make a proposal of the costs to implement both strategies. Financially, financial indicators are proposed by download channel (indicators such as Return on Investment).
+
+
+# We want to build up a model to predict “Possible Churn Users” for DiDi Rides APP (e.g.: no trips in the past 4 weeks). Please list all features that you can think about and the data mining or machine learning model or other methods you may use for this case
+
+
+I believe that the conceptualization of *churn user* should be defined by the business area, also the definition of the problem to solve is a task for business Area. 
+ 
+I consider that the variables that would allow making the prediction are the
+following:
+
+- Datos demográficos, ingresos mensuales,                                                   
+
+Since this is a predictive model, I would choose a nonlinear regression.
+However, I consider necessary to use a classification model, to know which drivers trigger users to be disabled. A simple model would be a logistic regression, or a cluster model.
