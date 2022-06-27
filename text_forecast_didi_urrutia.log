@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.1.14)  27 JUN 2022 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.1.14)  27 JUN 2022 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,11 +649,11 @@ LaTeX Info: Redefining \% on input line 1.
 
 [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 191.
+(Font)              <10> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 191.
+(Font)              <7> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 191.
+(Font)              <5> on input line 200.
 [3] [4] (./text_forecast_didi_urrutia.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
@@ -664,13 +664,13 @@ Package rerunfilecheck Info: File `text_forecast_didi_urrutia.out' has not chang
 Here is how much of TeX's memory you used:
  15888 strings out of 480246
  263295 string characters out of 5893959
- 566230 words of memory out of 5000000
+ 565230 words of memory out of 5000000
  33541 multiletter control sequences out of 15000+600000
  521735 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,11n,63p,1552b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,63p,1552b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Propietario/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on text_forecast_didi_urrutia.pdf (4 pages, 185060 bytes).
+Output written on text_forecast_didi_urrutia.pdf (4 pages, 185217 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

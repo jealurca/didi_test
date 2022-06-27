@@ -123,12 +123,12 @@ library(olsrr)
 
 <!-- INICIO DOCUMENTO -->
 
-
+  
 # Based on the data and your ideas, plan strategies to double the total restaurant visitors in six months.
 
 I would like to use 2 strategies: 
 
-- Based on the modelling techniques, I strongly use the variables that area statistical significant:  Holiday, the type of  Western food, the Restaurat, and  the day of the week (specially a Saturday)
+- Based on the modelling techniques, I strongly use  variables that are statistical significant in the regression model:  Holiday, the type of  Western food, the Restaurat, and  the day of the week (specially a Saturday)
 
 - Based on the professional expertise, I will hire a specialist in restaurant (because nowadays no one machine or statistical model is better that the human expertis to simulate or predict in long-term situations, specially in complex or chaotic environments, as selling or human interactions). 
 
@@ -137,18 +137,24 @@ I would like to use 2 strategies:
 # - Imagine that these restaurants are in your city (and not in Japan), what other data would you want to join in order of get more insights to increase the visitors?
 
 
-I would like to have information about restaurants and  consumers. In other words, it would be pertinent to define the type of consumer profile and its socio-demographic, cultural variables (such as age, income, education, address, work location, family/friend networks with whom they go to eat, partisan affiliation) in order to to generate the proto person. Regarding the profile of the restaurant and the industry, it would be pertinent to know the economic cycle where it is at the moment, also variables stop consumption (such as location, type of food, proximity to other restaurants, food ranking, day of the week , perception of location insecurity). So, in general, there are two factors (restaurant and customer), and for the set of variables, I would run a System of Structural Equations, in order to validate if the proposed variables have consistency in practice, and later, I would run Statistical experiments, in order to compares which variables have more weight in the prediction.
-Finally, although I proposed some variables to consider to increase visits, it would be necessary to qualitatively validate if the proposed variables are the best.
+I would like to have information about restaurants and  consumers. 
+
+- About consumers, it would be pertinent to define the type of consumer profile and its socio-demographic, cultural variables (such as age, income, education, address, work location, family/friend networks with whom they go to eat, partisan affiliation) in order  to generate the proto person. 
+
+- Regarding the profile of the restaurant and the industry, it would be pertinent to know the economic cycle where it is at the moment, also I strongly suggest to identify the variables that trigger consumption (such as location, type of food, proximity to other restaurants, food ranking, day of the week , perception of location insecurity). 
+
+So, in general, there are two factors (restaurant and customer), and for the set of variables, I would run a  Structural Equations Model, in order to validate if the proposed variables have consistency in practice, and later, I would run Statistical experiments, in order to compares which variables have more weight in the prediction.
+
+Finally, although I suggested some variables to consider to increase visits, it would be necessary to qualitatively validate if the proposed variables are the best.
 
 
 #  How many channels can you think of downloading a DiDi Rides APP and how will you estimate the quality and cost of each channel?
 
-The channels refer to the means by which it is possible to download a tool. In the case of downloading applications, I tried to do a brief documentary research, I found that
- more than half (57%) of app downloads are from digital channels. The rest is done through other channels, such as prepaid cards.
+In the case of downloading applications, I did a brief documentary research, I found that more than half (57%) of app downloads are from digital channels. The rest is done through other channels, such as prepaid cards.
 
 Given that two channels are proposed, the way in which quality and price are estimated will be as follows:
 
-- The quality of the channels will depend on 2 indicators: The first is Quantity of purchase per user given the channel; and purchase frequency per user given channel.
+- The quality of the channels will depend on 2 indicators: The first is Quantity (in money) of purchase per user given the channel; and purchase frequency per user given channel.
 
 - Regarding the price of the channels, it is proposed that the Commercial team make a proposal of the costs to implement both strategies. Financially, financial indicators are proposed by download channel (indicators such as Return on Investment).
 
@@ -161,7 +167,7 @@ I believe that the conceptualization of *churn user* should be defined by the bu
 I consider that the variables that would allow making the prediction are the
 following:
 
-- Datos demográficos, ingresos mensuales,                                                   
+- Demographics, net income montly, home ubication, job ubication, risk for leaving our app (as risk in insurance).
 
 Since this is a predictive model, I would choose a nonlinear regression.
-However, I consider necessary to use a classification model, to know which drivers trigger users to be disabled. A simple model would be a logistic regression, or a cluster model.
+However, I consider necessary to use a classification model, to know which drivers trigger users to be disabled. A simple model would be a logistic regression, or a cluster model. 
